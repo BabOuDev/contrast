@@ -15,7 +15,7 @@ export function adjustBrightness(imageData, brightness) {
 }
 
 export function adjustContrast(imageData, contrast) {
-  const contrastFactor = (259 * (contrast + 255)) / (255 * (259 - contrast))
+  const contrastFactor = (259 * (contrast/2 + 255)) / (255 * (259 - contrast/2))
   for (let i = 0; i < imageData.data.length; i += 4) {
     imageData.data[i] = truncate(contrastFactor * (imageData.data[i] - 128) + 128)
     imageData.data[i + 1] = truncate(contrastFactor * (imageData.data[i + 1] - 128) + 128)

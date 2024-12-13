@@ -18,17 +18,20 @@ export default {
 <style>
 body {
   margin: 0;
-  background: #673AB7;
+  background-color: rgba(31, 31, 31, 0.92);
   min-height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  padding: 40px 0;
+  align-items: center;
+  padding: 0;
 }
 
 #app {
-  font-family: system-ui, -apple-system, sans-serif;
+  font-family: Graphik-medium;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 782px;
+  display: flex;
+  align-items: center;
 }
 </style>
